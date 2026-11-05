@@ -2,20 +2,25 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Photo Gallery</title>
-    <!-- Liên kết đến file CSS và JS của bạn -->
+    <title>Interactive Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
     <script src="gallery.js"></script>
 </head>
-<body>
+<body onload="addTabIndex()">
     <!-- Khung hiển thị ảnh lớn -->
-    <div id="image">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
+    <div id="image">Di chuột hoặc dùng phím Tab qua một hình ảnh bên dưới để hiển thị ở đây.</div>
 
-    <!-- Các ảnh nhỏ bên dưới -->
-    <img class="preview" alt="Chó cưng mang khăn quàng" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+    <!-- 6 ảnh nhỏ bên dưới đã được gắn sự kiện -->
+    <img class="preview" alt="Ảnh phong cảnh 1" src="https://picsum.photos/id/10/300/200" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
     
-    <img class="preview" alt="Cậu bé và chú chó" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img class="preview" alt="Ảnh phong cảnh 2" src="https://picsum.photos/id/11/300/200" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
     
-    <img class="preview" alt="Chó con dễ thương" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img class="preview" alt="Ảnh phong cảnh 3" src="https://picsum.photos/id/12/300/200" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    
+    <img class="preview" alt="Ảnh phong cảnh 4" src="https://picsum.photos/id/13/300/200" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    
+    <img class="preview" alt="Ảnh phong cảnh 5" src="https://picsum.photos/id/14/300/200" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    
+    <img class="preview" alt="Ảnh phong cảnh 6" src="https://picsum.photos/id/15/300/200" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
 </body>
 </html>
