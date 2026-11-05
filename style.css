@@ -11,7 +11,7 @@ body {
     border: 5px solid black;
     margin: 0 auto;
     background-color: #8e68ff;
-    background-image: url(''); /* Ảnh nền ban đầu để trống */
+    background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
@@ -24,4 +24,10 @@ body {
     width: 10%;
     margin-left: 17%;
     border: 10px solid black;
+}
+
+/* Hiệu ứng viền vàng khi chọn ảnh bằng phím Tab */
+.preview:focus {
+    border-color: #ffeb3b;
+    outline: none;
 }
